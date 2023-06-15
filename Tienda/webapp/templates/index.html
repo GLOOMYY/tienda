@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bienvenido</title>
+</head>
+<body>
+  <h1>Tienda</h1>
+    <div>
+       {% for items in productos %}
+        <div>
+          <h2>{{items.nombre}}</h2>
+          <p>{{items.descripcion}}</p>
+          <p>{{items.precio}}</p>
+          <p>{{items.cantidad}}</p>
+          <p>{{items.categoria}}</p>
+          <p>{{items.fecha}}</p>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
